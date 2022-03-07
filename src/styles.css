@@ -48,13 +48,14 @@ table {
 
 html, body {
   height: 100%;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Bangers', cursive;
+  font-family: 'Anton', sans-serif;
   letter-spacing: 1px;
   margin-bottom: 15px;
+  color: #ffcccc;
 }
 
 .container {
@@ -78,7 +79,7 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  color: #b0b0b0;
+  color: #fcb6b6;
 }
 
 header nav a.italic {
@@ -87,7 +88,7 @@ header nav a.italic {
 
 header nav a:hover {
   text-decoration: underline;
-  color: black;
+  color: rgb(250, 166, 166);
 }
 
 header .logo {
@@ -115,17 +116,18 @@ header .logo {
 }
 
 .cta .cta-text button {
-  border: 1px double black;
+  border: 1px double rgb(255, 154, 154);
   font-size: 16px;
   background: white;
   width: 170px;
   height: 32px;
   margin-top: 10px;
   cursor: pointer;
+  color:rgb(250, 166, 166);
 }
 
 .cta .cta-text button:hover {
-  background: black;
+  background: rgb(255, 199, 199);
   color: white;
 }
 
