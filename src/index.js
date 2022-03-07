@@ -52,7 +52,7 @@ navArray[0].textContent = "Custom Content"
 navArray[1].textContent = "Mods";
 navArray[2].textContent = "CC Finds"
 navArray[3].textContent = "WIP";
-navArray[4].textContent = "About Me";
+navArray[4].textContent = "Shop";
 navArray[5].textContent = "Contact";
 
 
@@ -81,4 +81,40 @@ summaryArray[2].classList.add("sol");
 summaryArray[3].classList.add("life-decider");
 summaryArray[4].classList.add("animal-crossing");
 
-console.log(summaryArray[4]);
+
+// * TOP TEXT CONTENT
+const featuredH4 = document.querySelector(".featured-cc h4");
+featuredH4.textContent = "Featured CC";
+
+const featuredP = document.querySelector(".featured-cc p");
+featuredP.textContent = "Et cumque minus ea natus mollitia aut quae dignissimos et ducimus molestiae. Id totam maiores At sunt animi amet dolor in galisum Aut maxime voluptatem ea voluptatem voluptatibus rem vitae enim ut dolor galisum rem repellendus harum sit temporibus maiores 33 velit corporis. "
+
+const aboutH4 = document.querySelector(".about h4");
+aboutH4.textContent = "About";
+
+const aboutP = document.querySelector(".about p");
+aboutP.textContent = "Lorem ipsum dolor sit amet. Aut eligendi rerum qui quia natus qui voluptatem dolor qui dolor tempore ut unde accusantium et modi delectus. Ea nostrum dicta ut mollitia ullam qui saepe illo eum quibusdam repellat id recusandae"
+
+// *PAGE BREAK IMG
+
+const imgBreak = document.querySelector("#middle-img");
+imgBreak.src = "../mocks/img/pgbreak.png"
+
+// * BOTTOM TEXT CONTENT
+const solH4 = document.querySelector(".sol h4");
+solH4.textContent = "Slice of Life Mod";
+
+const solP = document.querySelector(".sol p");
+solP.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting"
+
+const lifeDeciderH4 = document.querySelector(".life-decider h4");
+lifeDeciderH4.textContent = "Life Decider Mod";
+
+const lifeDeciderP = document.querySelector(".life-decider p");
+lifeDeciderP.textContent = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here";
+
+const acH4 = document.querySelector(".animal-crossing h4");
+acH4.textContent = "Animal Crossing Mod";
+
+const acP = document.querySelector(".animal-crossing p");
+acP.textContent = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
