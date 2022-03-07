@@ -110,22 +110,22 @@ imgBreak.src = siteContent.images["accent-img"];
 
 // * BOTTOM TEXT CONTENT
 const solH4 = document.querySelector(".sol h4");
-solH4.textContent = "Slice of Life Mod";
+solH4.textContent = siteContent["main-content"]["services-h4"];
 
 const solP = document.querySelector(".sol p");
-solP.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting"
+solP.textContent = siteContent["main-content"]["services-content"];
 
 const lifeDeciderH4 = document.querySelector(".life-decider h4");
-lifeDeciderH4.textContent = "Life Decider Mod";
+lifeDeciderH4.textContent = siteContent["main-content"]["product-h4"];
 
 const lifeDeciderP = document.querySelector(".life-decider p");
-lifeDeciderP.textContent = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here";
+lifeDeciderP.textContent = siteContent["main-content"]["product-content"];
 
 const acH4 = document.querySelector(".animal-crossing h4");
-acH4.textContent = "Animal Crossing Mod";
+acH4.textContent = siteContent["main-content"]["vision-h4"];
 
 const acP = document.querySelector(".animal-crossing p");
-acP.textContent = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+acP.textContent = siteContent["main-content"]["vision-content"];
 
 /* ------------------------------------------------------------------------------------------------------------------------
 -------------------------------------  FOOTER/CONTACT SECTION --------------------------------------------------------------------*/
