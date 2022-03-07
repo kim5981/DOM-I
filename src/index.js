@@ -1,3 +1,5 @@
+
+
 const siteContent = { // DO NOT CHANGE THIS OBJECT
   "nav": {
     "nav-item-1": "Services",
@@ -40,3 +42,30 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+
+/* ------------------------------------------------------------------------------------------------------------------------
+-------------------------------------- NAV BAR --------------------------------------------------------------------*/
+const navItems = document.querySelectorAll("nav a");
+const navArray = Array.from(navItems);
+navArray[0].textContent = "Custom Content"
+navArray[1].textContent = "Mods";
+navArray[2].textContent = "CC Finds"
+navArray[3].textContent = "WIP";
+navArray[4].textContent = "About Me";
+navArray[5].textContent = "Contact";
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------
+-------------------------------------  CTA SECTION --------------------------------------------------------------------*/
+const greeting = document.querySelector(".cta-text h1")
+greeting.textContent = "Kawaii Stacie";
+
+const ctaBtn = document.querySelector(".cta-text button");
+ctaBtn.innerHTML= "More";
+
+const artistPhoto = document.querySelector("#cta-img");
+artistPhoto.src= "../mocks/img/stacieportrait.jpg";
+
+
