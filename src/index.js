@@ -68,4 +68,17 @@ ctaBtn.innerHTML= "More";
 const artistPhoto = document.querySelector("#cta-img");
 artistPhoto.src= "../mocks/img/stacieportrait.jpg";
 
+/* ------------------------------------------------------------------------------------------------------------------------
+-------------------------------------  MIDDLE TEXT SECTION --------------------------------------------------------------------*/
 
+// * Add add'l class names to e/ text-content div to make accessing their content easier 
+const summary = document.querySelectorAll(".text-content")
+const summaryArray = Array.from(summary);
+
+summaryArray[0].classList.add("featured-cc");
+summaryArray[1].classList.add("about");
+summaryArray[2].classList.add("sol");
+summaryArray[3].classList.add("life-decider");
+summaryArray[4].classList.add("animal-crossing");
+
+console.log(summaryArray[4]);
