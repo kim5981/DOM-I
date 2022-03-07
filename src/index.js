@@ -118,3 +118,21 @@ acH4.textContent = "Animal Crossing Mod";
 
 const acP = document.querySelector(".animal-crossing p");
 acP.textContent = "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text."
+
+/* ------------------------------------------------------------------------------------------------------------------------
+-------------------------------------  FOOTER/CONTACT SECTION --------------------------------------------------------------------*/
+const contactH4 = document.querySelector(".contact h4")
+contactH4.textContent = "Get In Touch: "
+
+const contactP = document.querySelectorAll(".contact p");
+const contactArr = Array.from(contactP);
+
+contactArr[0].textContent = "123 Way 456 St Somewhere, USA";
+contactArr[1].textContent = "888-888-8888";
+contactArr[2].textContent = "kawaiistacie@example.io"
+
+console.log("here is the array: ", contactArr);
+
+// * COPYRIGHT TEXT
+const copyright = document.querySelector("footer a");
+copyright.innerHTML = "Copyright KawaiiStacie 2022";
