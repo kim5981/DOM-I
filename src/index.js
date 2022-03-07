@@ -26,7 +26,7 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
     "vision-content": "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
   },
   "contact": {
-    "contact-h4": "Contact",
+    "contact-h4": "Get in Touch: ",
     "address": "123 Way 456 Street Somewhere, USA",
     "phone": "1 (888) 888-8888",
     "email": "kawaiistacie@example.io",
@@ -130,17 +130,17 @@ acP.textContent = siteContent["main-content"]["vision-content"];
 /* ------------------------------------------------------------------------------------------------------------------------
 -------------------------------------  FOOTER/CONTACT SECTION --------------------------------------------------------------------*/
 const contactH4 = document.querySelector(".contact h4")
-contactH4.textContent = "Get In Touch: "
+contactH4.textContent = siteContent.contact["contact-h4"];
 
 const contactP = document.querySelectorAll(".contact p");
 const contactArr = Array.from(contactP);
 
-contactArr[0].textContent = "123 Way 456 St Somewhere, USA";
-contactArr[1].textContent = "888-888-8888";
-contactArr[2].textContent = "kawaiistacie@example.io"
+contactArr[0].textContent = siteContent.contact.address;
+contactArr[1].textContent = siteContent.contact.phone;
+contactArr[2].textContent = siteContent.contact.email;
 
 console.log("here is the array: ", contactArr);
 
 // * COPYRIGHT TEXT
 const copyright = document.querySelector("footer a");
-copyright.innerHTML = "Copyright KawaiiStacie 2022";
+copyright.innerHTML = siteContent.footer.copyright;
