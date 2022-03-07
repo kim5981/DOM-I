@@ -2,42 +2,42 @@
 
 const siteContent = { // DO NOT CHANGE THIS OBJECT
   "nav": {
-    "nav-item-1": "Services",
-    "nav-item-2": "Product",
-    "nav-item-3": "Vision",
-    "nav-item-4": "Features",
-    "nav-item-5": "About",
+    "nav-item-1": "Custom Content",
+    "nav-item-2": "Mods",
+    "nav-item-3": "CC Finds",
+    "nav-item-4": "WIP",
+    "nav-item-5": "Merch",
     "nav-item-6": "Contact",
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "All the Best CC",
     "button": "Get Started",
   },
   "main-content": {
-    "features-h4": "Features",
+    "features-h4": "Featured CC",
     "features-content": "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
     "about-h4": "About",
     "about-content": "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
-    "services-h4": "Services",
+    "services-h4": "Slice of Life Mod",
     "services-content": "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
-    "product-h4": "Product",
+    "product-h4": "Life Decider Mod",
     "product-content": "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
-    "vision-h4": "Vision",
+    "vision-h4": "Animal Crossing Mod",
     "vision-content": "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
   },
   "contact": {
     "contact-h4": "Contact",
     "address": "123 Way 456 Street Somewhere, USA",
     "phone": "1 (888) 888-8888",
-    "email": "sales@greatidea.io",
+    "email": "kawaiistacie@example.io",
   },
   "footer": {
-    "copyright": "Copyright Great Idea! 2021",
+    "copyright": "Copyright Kawaii Stacie 2022",
   },
   "images": {
     "logo-img": "http://localhost:9000/img/logo.png",
     "cta-img": "http://localhost:9000/img/cta.png",
-    "accent-img": "http://localhost:9000/img/accent.png",
+    "accent-img": "http://localhost:9000/img/pgbreak.png",
   },
 };
 
@@ -48,25 +48,26 @@ console.log('project wired!')
 -------------------------------------- NAV BAR --------------------------------------------------------------------*/
 const navItems = document.querySelectorAll("nav a");
 const navArray = Array.from(navItems);
-navArray[0].textContent = "Custom Content"
-navArray[1].textContent = "Mods";
-navArray[2].textContent = "CC Finds"
-navArray[3].textContent = "WIP";
-navArray[4].textContent = "Shop";
-navArray[5].textContent = "Contact";
+navArray[0].textContent = siteContent.nav["nav-item-1"];
+navArray[1].textContent = siteContent.nav["nav-item-2"];
+navArray[2].textContent = siteContent.nav["nav-item-3"];
+navArray[3].textContent = siteContent.nav["nav-item-4"];
+navArray[4].textContent = siteContent.nav["nav-item-5"];
+navArray[5].textContent = siteContent.nav["nav-item-6"];
 
 
 
 /* ------------------------------------------------------------------------------------------------------------------------
 -------------------------------------  CTA SECTION --------------------------------------------------------------------*/
 const greeting = document.querySelector(".cta-text h1")
-greeting.textContent = "Kawaii Stacie";
+greeting.textContent = siteContent.cta.h1;
 
 const ctaBtn = document.querySelector(".cta-text button");
-ctaBtn.innerHTML= "More";
+ctaBtn.innerHTML= siteContent.cta.button;
 
 const artistPhoto = document.querySelector("#cta-img");
-artistPhoto.src= "../mocks/img/stacieportrait.jpg";
+artistPhoto.src= siteContent.images["cta-img"];
+//change later
 
 /* ------------------------------------------------------------------------------------------------------------------------
 -------------------------------------  MIDDLE TEXT SECTION --------------------------------------------------------------------*/
@@ -98,7 +99,7 @@ aboutP.textContent = "Lorem ipsum dolor sit amet. Aut eligendi rerum qui quia na
 // *PAGE BREAK IMG
 
 const imgBreak = document.querySelector("#middle-img");
-imgBreak.src = "../mocks/img/pgbreak.png"
+imgBreak.src = siteContent.images["accent-img"];
 
 // * BOTTOM TEXT CONTENT
 const solH4 = document.querySelector(".sol h4");
