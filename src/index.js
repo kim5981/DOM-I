@@ -85,16 +85,16 @@ summaryArray[4].classList.add("animal-crossing");
 
 // * TOP TEXT CONTENT
 const featuredH4 = document.querySelector(".featured-cc h4");
-featuredH4.textContent = "Featured CC";
+featuredH4.textContent = siteContent["main-content"]["features-h4"];
 
 const featuredP = document.querySelector(".featured-cc p");
-featuredP.textContent = "Et cumque minus ea natus mollitia aut quae dignissimos et ducimus molestiae. Id totam maiores At sunt animi amet dolor in galisum Aut maxime voluptatem ea voluptatem voluptatibus rem vitae enim ut dolor galisum rem repellendus harum sit temporibus maiores 33 velit corporis. "
+featuredP.textContent = siteContent["main-content"]["features-content"];
 
 const aboutH4 = document.querySelector(".about h4");
-aboutH4.textContent = "About";
+aboutH4.textContent = siteContent["main-content"]["about-h4"];
 
 const aboutP = document.querySelector(".about p");
-aboutP.textContent = "Lorem ipsum dolor sit amet. Aut eligendi rerum qui quia natus qui voluptatem dolor qui dolor tempore ut unde accusantium et modi delectus. Ea nostrum dicta ut mollitia ullam qui saepe illo eum quibusdam repellat id recusandae"
+aboutP.textContent = siteContent["main-content"]["about-content"];
 
 // *PAGE BREAK IMG
 
