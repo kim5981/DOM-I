@@ -35,13 +35,20 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
     "copyright": "Copyright Kawaii Stacie 2022",
   },
   "images": {
-    "logo-img": "http://localhost:9000/img/logo.png",
-    "cta-img": "http://localhost:9000/img/cta.png",
+    "logo-img": "http://localhost:9000/img/kawaii-stacie-logo2.png",
+    "cta-img": "https://simstime.net/wp-content/uploads/2021/06/SDF.png",
     "accent-img": "http://localhost:9000/img/pgbreak.png",
   },
 };
 
-console.log('project wired!')
+console.log('hello (˵ ͡o ͜ʖ ͡o˵)');
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------
+-------------------------------------- LOGO --------------------------------------------------------------------*/
+const logoImg = document.querySelector("#logo-img");
+logoImg.src = siteContent.images["logo-img"];
 
 
 /* ------------------------------------------------------------------------------------------------------------------------
